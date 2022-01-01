@@ -10,11 +10,12 @@
     "test": "jest --watchAll"
   },
   "dependencies": {
-    "babel-jest": "^27.4.5",
-    "linkifyjs": "^3.0.4"
+    "linkifyjs": "^3.0.4",
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.16.5",
+    "babel-jest": "^27.4.5",
     "jest": "^27.4.5",
     "parcel": "^2.0.1"
   },
@@ -23,6 +24,8 @@
       "\\.css$": "<rootDir>/__mocks__/styleMock.js"
     },
     "testEnvironment": "jsdom",
-    "setupFilesAfterEnv": ["./setupTests.js"]
+    "setupFilesAfterEnv": [
+      "./setupTests.js"
+    ]
   }
 }
