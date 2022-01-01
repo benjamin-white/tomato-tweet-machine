@@ -63,6 +63,8 @@ const addHashtag = (tweet, tag) => `${tweet}${tag}`
 
 const processTweet = async (tweet) => {
 
+  if (!tweet.length) return tweet
+
   const tags = {
     en: ' #Tomato',
     fr: ' #Tomate',
