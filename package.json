@@ -1,0 +1,28 @@
+{
+  "name": "tomato-tweet-machine",
+  "version": "1.0.1",
+  "description": "A browser interface to assist in formatting #Tomato themed tweets",
+  "source": "index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build",
+    "test": "jest --watchAll"
+  },
+  "dependencies": {
+    "babel-jest": "^27.4.5",
+    "linkifyjs": "^3.0.4"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.5",
+    "jest": "^27.4.5",
+    "parcel": "^2.0.1"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.css$": "<rootDir>/__mocks__/styleMock.js"
+    },
+    "testEnvironment": "jsdom",
+    "setupFilesAfterEnv": ["./setupTests.js"]
+  }
+}
